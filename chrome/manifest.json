@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Argent",
+  "description": "Auto-refresh browser extension for the Auster framework.",
+  "version": "0.1",
+  "icons": {
+    "48": "shared/media/connected.png"
+  },
+  "background": { 
+    "scripts": ["chrome_native.js", "shared/argent.js"] 
+  },
+  "browser_action": {
+    "default_icon": "shared/media/disconnected.png"
+  },
+  "options_page": "shared/settings/settings.html",
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
